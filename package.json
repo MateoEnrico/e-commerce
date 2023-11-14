@@ -1,7 +1,6 @@
 {
   "name": "e-commerce",
   "private": true,
-  "homepage": "https://MateoEnrico.github.io/e-commerce/build",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
