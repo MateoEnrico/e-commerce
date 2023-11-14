@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .home-container {
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .banner-rectangle {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .banner-rectangle img {
+    max-width: 100%;  /* Agrega este estilo para limitar el tamaño de la imagen al 60% del contenedor */
+    height: auto;
+    display: block;  /* Para evitar espacios adicionales debajo de la imagen */
+    margin: 0 auto;  /* Centra la imagen horizontalmente */
+  }
+  
+  .banner-rectangle p {
+    margin: 0;
+  }

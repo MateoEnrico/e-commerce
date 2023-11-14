@@ -1,0 +1,17 @@
+.brands-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .brand {
+    margin-top: 20px;
+  }
+  
+  .brand img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
