@@ -1,0 +1,18 @@
+.cart {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para los elementos del carrito */
+  .cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-items li {
+    margin-bottom: 8px;
+  }
+  
+  /* Estilos para el total */
+  .cart-total {
+    font-weight: bold;
+  }

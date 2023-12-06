@@ -6,6 +6,7 @@ import yamahaCryptonImage from '../../images/crypton.jpg';
 import yamahaXTZImage from '../../images/xtz.jpg';
 
 const Products = () => {
+  const [cartItems, setCartItems] = useState([]);
   const [dolarPrice, setDolarPrice] = useState(null);
   const [apiLoaded, setApiLoaded] = useState(false);
   const [error, setError] = useState(null);
@@ -60,6 +61,10 @@ const Products = () => {
     console.warn('Falló la solicitud a la API. Se utilizará el valor predeterminado para el precio del dólar.');
   }
 
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]); // Agregar el producto al carrito
+  };
+
   return (
     <div className="products-container">
       {productsData.map((product, index) => (
@@ -68,11 +73,20 @@ const Products = () => {
           <div>
             <h3>{product.name}</h3>
             <p>Precio en AR$: ${product.price}</p>
-            <p>Precio en U$: {calculatePriceInDollars(product.price)}</p>
-            <p>{product.description}</p>
+            <button onClick={() => addToCart(product)}>Comprar</button>
           </div>
         </div>
       ))}
+      <div className="cart">
+        <h2>Carrito de compras</h2>
+        <ul>
+          {cartItems.map((item, index) => (
+            <li key={index}>
+              {item.name} - ${item.price}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

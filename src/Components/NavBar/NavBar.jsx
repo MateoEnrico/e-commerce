@@ -10,7 +10,6 @@ const NavBar = () => {
             <li><Link to="/productos">Productos</Link></li>
             <li><Link to="/financiaciones">Financiaciones</Link></li>
             <li><Link to="/marcas">Marcas</Link></li>
-            <li><Link to="/sponsors">Sponsors</Link></li>
             </ul>
         </nav>
     );
